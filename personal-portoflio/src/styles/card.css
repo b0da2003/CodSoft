@@ -1,0 +1,75 @@
+.project-card {
+    position: relative;
+    display: grid;
+    width: 400px;
+    height: 450px;
+    padding-bottom: 1rem;
+    box-shadow: 0px 10px 51px -3px #0c18445b;
+    background-color: #0C1844;
+    border-radius: 0.8rem;
+    cursor: pointer;
+    text-decoration: none;
+    
+}
+.project-card:hover .card-about span {
+    color: rgb(255, 136, 0);
+}
+.img-container {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 2rem;
+    border-radius: 0.8rem 0.8rem 0 0;
+}
+.img-container img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.8rem 0.8rem 0 0;
+    transition: all 0.3s;
+}
+.img-container img:hover {
+    scale: 1.08;
+}
+.card-about {
+    display: grid;
+   padding: 1rem 1rem 2rem 1.5rem;
+    row-gap: 1.2rem;
+    color: white;
+}
+.card-about span {
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+    transition: all 0.3s;
+}
+.card-about p {
+    font-weight: 400;
+    font-size: 1.2rem;
+    font-family: "Poppins", sans-serif;
+    line-height: 1.7rem;
+}
+.project-skill {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    gap: 0.5rem;
+    padding: 0 1rem  1rem 0;
+}
+.project-skill img {
+    width: 30px;
+}
+
+@media (max-width:1024px) {
+    .project-card {
+        width: 375px;
+        height: 425px;
+    }
+}
+@media (max-width:768px) {
+    .project-card{
+        width: 80%;
+        height: 450px;
+        max-width: 550px;
+        margin: auto;
+    }
+}
